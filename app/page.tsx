@@ -13,6 +13,10 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import AboutSection from "@/components/Aboutme";
 import SkillsSection from "@/components/Skills";
 import Work from "@/components/work";
+import AchievementsSection from "@/components/achievement-card";
+
+import AchievementCard from "@/components/achievement-card";
+import HackathonTimeline from "@/components/hackathon-timeline";
 
 const Home = () => {
   return (
@@ -23,10 +27,16 @@ const Home = () => {
         <AboutSection />
         <SkillsSection />
         <Work />
-        <Grid />
-        <RecentProjects />
-        <Clients />
-        <Experience />
+        <br />
+        <br />
+        <br />
+        <br />
+        <HackathonTimeline />
+        {/* <Grid /> */}
+        {/* <RecentProjects /> */}
+        {/* <Clients /> */}
+        {/* <Experience /> */}
+        <br />
         <Approach />
         <Footer />
       </div>

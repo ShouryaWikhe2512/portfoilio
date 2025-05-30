@@ -85,3 +85,55 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
+
+/* Circuit board pattern */
+.circuit-pattern {
+  background-image: radial-gradient(circle at 25px 25px, rgba(59, 130, 246, 0.15) 2px, transparent 0),
+    linear-gradient(to right, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Terminal text effect */
+.terminal-text {
+  font-family: monospace;
+  position: relative;
+}
+
+.terminal-text::after {
+  content: "|";
+  position: absolute;
+  right: -10px;
+  animation: terminal-blink 1s infinite;
+}
+
+/* Glitch effect */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.glitch-effect {
+  animation: glitch 0.3s ease-in-out;
+}
