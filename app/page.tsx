@@ -17,6 +17,7 @@ import AchievementsSection from "@/components/achievement-card";
 
 import AchievementCard from "@/components/achievement-card";
 import HackathonTimeline from "@/components/hackathon-timeline";
+import Contact from "@/components/Contact";
 
 const Home = () => {
   return (
@@ -38,6 +39,10 @@ const Home = () => {
         {/* <Experience /> */}
         <br />
         <Approach />
+        <Contact />
+        <br />
+        <br />
+        <br />
         <Footer />
       </div>
     </main>

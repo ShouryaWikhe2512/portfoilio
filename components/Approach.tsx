@@ -15,7 +15,7 @@ const Approach = () => {
         <Card
           title="Planning & Research"
           icon={<AceternityIcon order="Phase 1" />}
-          des="Starting with clear goal-setting, audience understanding, and trend analysis to inform a tech stack and design approach that ensures a modern, responsive, and user-focused portfolio."
+          des="Starting with clear goal-setting, audience understanding, and trend analysis to inform a tech stack and design approach that ensures a modern, responsive, and user-focused website."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,7 +26,7 @@ const Approach = () => {
         <Card
           title="Design & Prototyping"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Focusing on crafting clean wireframes and interactive mockups that prioritize intuitive navigation and visual consistency, laying the foundation for a user-centric and professional portfolio interface."
+          des="Focusing on crafting clean wireframes and interactive mockups that prioritize intuitive navigation and visual consistency, laying the foundation for a user-centric and professional website interface."
         >
           <CanvasRevealEffect
             animationSpeed={3}

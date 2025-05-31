@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function Work() {
   return (
-    <section className="min-h-screen py-16 px-6 ">
+    <section id="project" className="min-h-screen py-16 px-6 ">
       <h2 className="text-4xl font-bold mb-12 text-center">
         Featured
         <span className="text-purple"> Projects</span>

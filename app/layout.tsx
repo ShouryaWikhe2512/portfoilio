@@ -3,12 +3,13 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Wiki's Portfolio",
-  description: "Modern & Minimal JS Mastery Portfolio",
+  title: "Shourya Wikhe's Portfolio",
+  description: "Simple and elegant portfolio",
 };
 
 export default function RootLayout({
@@ -19,11 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link
-          rel="icon"
-          href="\pikachu_logo_by_jamierose64_d2mk4a7-375w-2x.jpg"
-          sizes="any"
-        />
+        <link rel="icon" href="\logo-no-background.svg" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
@@ -32,6 +29,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Toaster position="top-right" reverseOrder={false} />
           {children}
         </ThemeProvider>
       </body>

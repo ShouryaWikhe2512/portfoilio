@@ -57,56 +57,58 @@ export default function HackathonTimeline() {
   }, []);
 
   return (
-    <div className="relative" ref={timelineRef}>
-      <h1 className="text-purple text-center text-4xl font-bold">
-        Achievements
-      </h1>
-      <br />
-      <br />
-      {/* Circuit path */}
-      <div
-        ref={pathRef}
-        className="absolute left-0 md:left-1/2 transform md:translate-x-[-50%] w-1 h-full bg-blue-500 z-10"
-        style={{ boxShadow: "0 0 10px rgba(59, 130, 246, 0.5)" }}
-      />
+    <section id="achievements">
+      <div className="relative" ref={timelineRef}>
+        <h1 className="text-purple text-center text-4xl font-bold">
+          Achievements
+        </h1>
+        <br />
+        <br />
+        {/* Circuit path */}
+        <div
+          ref={pathRef}
+          className="absolute left-0 md:left-1/2 transform md:translate-x-[-50%] w-1 h-full bg-blue-500 z-10"
+          style={{ boxShadow: "0 0 10px rgba(59, 130, 246, 0.5)" }}
+        />
 
-      {/* Timeline content */}
-      <div className="relative z-20">
-        {hackathonData.map((achievement, index) => (
-          <div
-            key={index}
-            className={`flex flex-col md:flex-row items-center md:items-start mb-24 relative ${
-              index % 2 === 0 ? "md:flex-row-reverse" : ""
-            }`}
-          >
-            {/* Circuit node */}
-            <div className="absolute left-0 md:left-1/2 transform md:translate-x-[-50%]">
-              <CircuitNode index={index} />
-            </div>
+        {/* Timeline content */}
+        <div className="relative z-20">
+          {hackathonData.map((achievement, index) => (
+            <div
+              key={index}
+              className={`flex flex-col md:flex-row items-center md:items-start mb-24 relative ${
+                index % 2 === 0 ? "md:flex-row-reverse" : ""
+              }`}
+            >
+              {/* Circuit node */}
+              <div className="absolute left-0 md:left-1/2 transform md:translate-x-[-50%]">
+                <CircuitNode index={index} />
+              </div>
 
-            {/* Content */}
-            <div className="w-full md:w-5/12 px-4 md:px-8">
-              <AchievementCard achievement={achievement} index={index} />
-            </div>
+              {/* Content */}
+              <div className="w-full md:w-5/12 px-4 md:px-8">
+                <AchievementCard achievement={achievement} index={index} />
+              </div>
 
-            {/* Date marker */}
-            <div className="w-full md:w-5/12 flex justify-center md:justify-start items-center mt-4 md:mt-7">
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.3, duration: 0.5 }}
-                className={`text-yellow-400 font-mono text-lg md:text-xl font-bold ${
-                  index % 1 === 0
-                    ? "md:text-left md:pl-40"
-                    : "md:text-right md:pr-30"
-                }`}
-              >
-                {achievement.date}
-              </motion.div>
+              {/* Date marker */}
+              <div className="w-full md:w-5/12 flex justify-center md:justify-start items-center mt-4 md:mt-7">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                  className={`text-yellow-400 font-mono text-lg md:text-xl font-bold ${
+                    index % 1 === 0
+                      ? "md:text-left md:pl-40"
+                      : "md:text-right md:pr-30"
+                  }`}
+                >
+                  {achievement.date}
+                </motion.div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
