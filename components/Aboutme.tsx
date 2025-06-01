@@ -90,7 +90,7 @@ export default function AboutSection() {
             </h3>
 
             <p className="text-muted-foreground text-lg">
-              I'm a passionate developer with a strong focus on creating
+              I&apos; m a passionate developer with a strong focus on creating
               beautiful, functional digital experiences. With expertise in both
               front-end and back-end technologies, I bring ideas to life through
               clean, efficient code and thoughtful design.
@@ -101,8 +101,8 @@ export default function AboutSection() {
               management system aimed at creating a positive social impact, to
               building a platform for content creators to enhance their
               creativity, I thrive on challenges that push me to innovate and
-              grow. I'm particularly passionate about using technology to solve
-              real-world problems and crafting solutions that blend
+              grow. I&apos; m particularly passionate about using technology to
+              solve real-world problems and crafting solutions that blend
               functionality with purpose.
             </p>
 

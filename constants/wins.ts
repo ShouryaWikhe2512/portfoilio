@@ -15,7 +15,7 @@ export const wins: Win[] = [
     hackathonName: "Inspiron 4.0 (CSI COEP)",
     image: "/images/inspiron.png",
     description:
-      "Won 1st place for building 'Alphagen' – an AI-powered content creation platform with auto music-video sync and personalized education features.",
+      "Won 1st place for building 'Alphagen' - an AI-powered content creation platform with auto music-video sync and personalized education features.",
   },
   {
     id: 2,
